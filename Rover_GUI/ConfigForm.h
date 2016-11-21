@@ -417,7 +417,7 @@ private: System::Void btnAceptar_Click(System::Object^  sender, System::EventArg
 		if (!validacionEmpty()) MessageBox::Show("Falta llenar alguno de los parametros de Control");
 		if (!validacionFormat() && validacionEmpty()) MessageBox::Show("Formato no valido para alguno de los parametros de Control. Por favor, ingrese un formato valido");
 	}
-
+	 
 } //Fin de Boton Aceptar
 private: System::Void btnDefaultValues_Click(System::Object^  sender, System::EventArgs^  e) {
 	SetDefaultControlParameters();
