@@ -24,6 +24,9 @@
     <ClCompile Include="Comunicacion_SerialForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NavegacionForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MenuForm.h">
@@ -35,12 +38,18 @@
     <ClInclude Include="Comunicacion_SerialForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NavegacionForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Comunicacion_SerialForm.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigForm.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

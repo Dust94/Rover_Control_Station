@@ -135,6 +135,7 @@
     <ClCompile Include="Comunicacion_SerialForm.cpp" />
     <ClCompile Include="ConfigForm.cpp" />
     <ClCompile Include="MenuForm.cpp" />
+    <ClCompile Include="NavegacionForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Comunicacion_SerialForm.h">
@@ -144,6 +145,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MenuForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NavegacionForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -156,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavegacionForm.resx">
+      <DependentUpon>NavegacionForm.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,7 @@
 #pragma once
 #include "Comunicacion_SerialForm.h"
 #include "ConfigForm.h"
+#include "NavegacionForm.h"
 
 namespace Rover_GUI {
 
@@ -84,6 +85,7 @@ namespace Rover_GUI {
 			this->btnNavegar->TabIndex = 1;
 			this->btnNavegar->Text = L"Navegar";
 			this->btnNavegar->UseVisualStyleBackColor = true;
+			this->btnNavegar->Click += gcnew System::EventHandler(this, &MenuForm::btnNavegar_Click);
 			// 
 			// btnComunicacion
 			// 
@@ -110,12 +112,16 @@ namespace Rover_GUI {
 		}
 #pragma endregion
 	private: System::Void btnComunicacion_Click(System::Object^  sender, System::EventArgs^  e) {
-		Comunicacion_SerialForm^ pform = gcnew Comunicacion_SerialForm();
-		pform->Show();
+		Comunicacion_SerialForm^ com_form = gcnew Comunicacion_SerialForm();
+		com_form->Show();
 	}
 	private: System::Void btnConfigurar_Click(System::Object^  sender, System::EventArgs^  e) {
-		ConfigForm^ pform = gcnew ConfigForm();
-		pform->Show();
+		ConfigForm^ config_form = gcnew ConfigForm();
+		config_form->Show();
 	}
-	};
+	private: System::Void btnNavegar_Click(System::Object^  sender, System::EventArgs^  e) {
+		NavegacionForm^ navega_form = gcnew NavegacionForm();
+		navega_form->Show();
+	}
+};
 }
