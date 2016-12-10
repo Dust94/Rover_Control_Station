@@ -52,5 +52,8 @@
     <EmbeddedResource Include="ConfigForm.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="NavegacionForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

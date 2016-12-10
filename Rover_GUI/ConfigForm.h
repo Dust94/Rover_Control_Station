@@ -18,11 +18,12 @@ namespace Rover_GUI {
 	{
 	public:
 		//Valores por defecto de los parametros de Control:
-		const float default_KpR = 1.5;
-		const float default_KiR = 2;
-		const float default_KdR = 2.4;
-		const float default_KpL = 1.5;
-		const float default_KiL = 2;
+		const float default_KpR = 3.49;
+		const float default_KiR = 1.64;
+		const float default_KdR = 0.08;
+		const float default_KpL = 3.49;
+		const float default_KiL = 1.64;
+		const float default_KdL = 0.08;
 		//Parametros de Control que acceden al objeto Motor:
 		float local_KpR;
 		float local_KiR;
@@ -33,7 +34,6 @@ namespace Rover_GUI {
 
 	private: System::Windows::Forms::Button^  btnDefaultValues;
 	public:
-		const float default_KdL = 2.4;
 
 		ConfigForm(void)
 		{
@@ -290,6 +290,7 @@ namespace Rover_GUI {
 			this->Controls->Add(this->label1);
 			this->Name = L"ConfigForm";
 			this->Text = L"ConfigForm";
+			this->Load += gcnew System::EventHandler(this, &ConfigForm::ConfigForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -421,6 +422,8 @@ private: System::Void btnAceptar_Click(System::Object^  sender, System::EventArg
 } //Fin de Boton Aceptar
 private: System::Void btnDefaultValues_Click(System::Object^  sender, System::EventArgs^  e) {
 	SetDefaultControlParameters();
+}
+private: System::Void ConfigForm_Load(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }
